@@ -1,5 +1,7 @@
 import React, { useRef, useEffect } from 'react'
 import "./verify.css"
+import { HiFire } from "react-icons/hi";
+
 const Verify = () => {
     const inputRef = [useRef(""), useRef(""), useRef(""), useRef("")]
     const handleChange = (e, index) => {
@@ -18,7 +20,12 @@ const Verify = () => {
     <div className='verify'>
       <article className="article">
         <header className="header">
-            <h2 className='logo-heading'>Refill<span className='logo-style'>Xpress</span></h2>
+            <h4 className='logo-heading'>
+                <span className='fire'>
+                    <HiFire /> 
+                </span>
+                Refill<span className='logo-style'>Xpress</span>
+            </h4>
         </header>
         <form className="form">
             <div className="form-heading">
@@ -40,7 +47,7 @@ const Verify = () => {
                 ))}
             </div>
             <p>didn't receive code, resend in 00:00</p>
-            <div>
+            <div className='submit-section'>
                 <button className="submit">verify</button>
             </div>
         </form>

@@ -1,6 +1,7 @@
 import React from 'react'
 import "./signup.css"
 import { HiFire } from "react-icons/hi";
+import  { BsEye, BsEyeSlash } from 'react-icons/bs';
 
 const Signup = () => {
     return (
@@ -56,12 +57,14 @@ const Signup = () => {
                         <label>password</label>
                         <div className="input-div">
                             <input type="text" placeholder='password (8 or more characters)' />
+                            <span className='eye'><BsEyeSlash /></span>
                         </div>
                     </div>
                     <div className="input-container">
                         <label>confirm password</label>
                         <div className="input-div">
                             <input type="text" placeholder='password (8 or more characters)' />
+                            <span className='eye'><BsEyeSlash /></span>
                         </div>
                     </div>
                     <div className="checkbox">
